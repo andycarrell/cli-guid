@@ -1,5 +1,8 @@
 # cli-guid
-node command line tool for generating a number of guids in the command line.
+`node` command line tool for generating a number of guids in the command line.
+
+The main entry point exposes a function that generates a list of guids.
+The command line tool prints each id generated on a new line.
 
 ### Usage
 `npm install -g cli-guid`

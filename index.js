@@ -1,8 +1,4 @@
-const uuid = require('uuid/v4');
+const { compose, parse, repeat } = require('./helpers');
+const { makeGuid } = require('./guid');
 
-const { compose, log, parse, repeat } = require('./helpers');
-
-const logId = compose(log, uuid);
-
-exports.printIds = compose(repeat(logId), parse);
-
+exports.makeGuids = compose(repeat(makeGuid), parse);

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const { printIds } = require('../index');
+const { makeGuids } = require('../index');
 
 const [,, arg] = process.argv;
 
-printIds(arg);
+makeGuids(arg).forEach(id => console.log(id));
