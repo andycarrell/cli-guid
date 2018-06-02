@@ -1,5 +1,5 @@
 {
-  "name": "guid-cli",
+  "name": "cli-guid",
   "version": "0.1.0",
   "description": "Generates a number of guids and prints to the console",
   "main": "index.js",
