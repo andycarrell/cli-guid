@@ -1,0 +1,22 @@
+{
+  "name": "guid-cli",
+  "version": "0.1.0",
+  "description": "Generates a number of guids and prints to the console",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "scripts": {
+    "start": "node ./bin/run.js"
+  },
+  "bin": {
+    "guid": "./bin/run.js"
+  },
+  "author": "Andy Carrell",
+  "license": "MIT",
+  "preferGlobal": true,
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
