@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
-const { makeGuids } = require('../index');
+const { makeGuids, makeCapitalizedGuids } = require('../index');
 
 const [,, arg] = process.argv;
 
-makeGuids(arg).forEach(id => console.log(id));
+const f = process.argv.some(arg => arg === '-c' || arg === '-capitalize' || arg === '-capitalise')
+    ? makeCapitalizedGuids
+    : makeGuids;
+
+f(arg).forEach(id => console.log(id));
